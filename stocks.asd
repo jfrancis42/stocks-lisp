@@ -6,6 +6,7 @@
   :license "MIT, see file LICENSE"
   :depends-on (#:drakma
                #:babel
+	       #:parse-number
                #:cl-json)
   :serial t
   :components ((:file "package")
