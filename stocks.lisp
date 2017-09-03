@@ -7,7 +7,9 @@ times when doing API stuff."
 
 (defmacro string-to-float (alist-key alist)
   "Converts the string representation of a value in an alist to a float."
-  `(setf (cdr-assoc ,alist-key ,alist) (parse-number:parse-number (cdr-assoc ,alist-key ,alist))))
+  `(when (cdr-assoc ,alist-key ,alist)
+     (setf (cdr-assoc ,alist-key ,alist)
+	   (parse-number:parse-number (cdr-assoc ,alist-key ,alist)))))
 
 (defun get-stock (stock)
   "Given a stock (examples: PANW, CHKP), return the available data for

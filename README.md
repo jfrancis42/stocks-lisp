@@ -1,7 +1,11 @@
 # stocks-lisp
-A Common Lisp client for pulling stock information from Google's public stock API.
+A Common Lisp client for pulling stock information from Google's
+public stock API.
 
-This is a trivial package (it is, in fact, one single line of CL code), but saves having to re-invent the wheel each time you need some basic stock data.
+This is a trivial package (you could provide equivalent functionality
+(minus error checking) in one line of code, if you wanted), but saves
+having to re-invent the wheel each time you need some basic stock
+data.
 
 ````
 CL-USER> (stocks:get-stock "PANW")
@@ -15,4 +19,6 @@ CL-USER> (stocks:get-stock "PANW")
 CL-USER> 
 ````
 
-I won't pretend to understand every one of these returned values, I wrote this mostly to grab :L and :C. I assume anyone familiar with stock trading can make use of the rest of the returned values.
+I won't pretend to understand every one of these returned values, I
+wrote this mostly to grab :L and :C. I assume anyone familiar with
+stock trading can make use of the rest of the returned values.
