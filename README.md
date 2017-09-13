@@ -1,3 +1,9 @@
+# BROKEN BROKEN BROKEN BROKEN BROKEN BROKEN BROKEN BROKEN BROKEN 
+
+# Google appears to have turned off the API used by this package. This package will be upgraded to use an alterate source of data.
+
+# BROKEN BROKEN BROKEN BROKEN BROKEN BROKEN BROKEN BROKEN BROKEN 
+
 # stocks-lisp
 A Common Lisp client for pulling stock information from Google's
 public stock API.
